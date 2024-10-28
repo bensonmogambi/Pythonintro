@@ -36,6 +36,26 @@ class dream_car:
 
 
 
+#ASSIGNMENT - MONDAY 28 OCT
+#WRITE A RECTANGLE CLASS ALLOWING A METHOD PERIMETER THAT CALCULATES THE PERIMETER OF A RECTANGLE
+#AND METHOD AREA OF A RECTANGLE , ANOTHER METHOD DISPLAY THAT DISPLAYS THE LENGTH AND WIDTH OF AN INSTANCE
+
+class rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def perimeter(self):
+        return 2 * (self.length + self.width)
+
+
+    def area(self):
+        return self.length * self.width
+
+
+    def display(self):
+        print(f"length: {self.length}, width: {self.width}")
+
 
 
 

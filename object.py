@@ -1,4 +1,4 @@
-from main import student, person, dream_car
+from main import student, person, dream_car, rectangle
 
 student1 = student()
 print(student1.first_name)
@@ -32,6 +32,26 @@ vehicle3 = dream_car(type='Truck', model='Ford F-150', year_of_manufacturing=202
 print(f'Vehicle Type: {vehicle1.type}, Model: {vehicle1.model}, Year: {vehicle1.year_of_manufacturing}, Engine Size: {vehicle1.engine_size}')
 print(f'Vehicle Type: {vehicle2.type}, Model: {vehicle2.model}, Year: {vehicle2.year_of_manufacturing}, Engine Size: {vehicle2.engine_size}')
 print(f'Vehicle Type: {vehicle3.type}, Model: {vehicle3.model}, Year: {vehicle3.year_of_manufacturing}, Engine Size: {vehicle3.engine_size}')
+
+
+
+#ASSIGNMENT - MONDAY 28 OCT
+rectangle1 = rectangle(23,25)
+
+# Displaying the length and width
+rectangle1.display()
+
+# Calculating and displaying the perimeter
+print("Perimeter:", rectangle1.perimeter())
+
+# Calculating and displaying the area
+print("Area:", rectangle1.area())
+
+
+
+
+
+
 
 
 
