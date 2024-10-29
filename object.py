@@ -1,4 +1,5 @@
-from main import student, person, dream_car, rectangle
+
+from main import student, person, dream_car, rectangle, Employee, Manager, Developer, HR, SalaryEmployee, HourlyEmployee, CommissionEmployee, BankAccount, SavingsAccount, CurrentAccount
 
 student1 = student()
 print(student1.first_name)
@@ -52,7 +53,58 @@ print("Area:", rectangle1.area())
 
 
 
+employee1=Employee("benson", 25, 150000, "Male")
+employee2=Employee("ben", 25, 190000, "Male")
+manager1=Manager("kezzy", 23, 250000, 'female', 'PHD')
+manager2=Manager("Ogash", 25, 300000, 'male', 'PHD')
+developer1= Developer('keya',23, 1000000, 'lesbian', 'python')
+hr1= HR('evensmkora', 40, 15000, 'male', 'f')
+salaryemployee1= SalaryEmployee('job', 49, 0, 'male', 3500 )
+HourlyEmployee= HourlyEmployee('ken',66, 0, 'gay', 200)
+commissionemployee1= CommissionEmployee('june', 18, 0, 'lesbian', 3000, 700)
 
 
+print(developer1.display)
+print(HourlyEmployee.display())
+print(salaryemployee1.calc_payroll())
+print(HourlyEmployee.calc_payroll2())
+print(commissionemployee1.calc_commission())
+
+
+
+
+#ASSIGNMENT 29 OCT
+
+#create a parent class bankaccount which represents a bank account with ITS RESPECTIVE ATTRIBUTES
+#create a deposit method that manages the deposit actions
+#create a withdrawal method which manages withdrawal actions
+#create a bankfees method that applies bank fees percentage of 5% on the baLANCE IN THE ACCOUNT
+#create display method to display account details
+
+#NB: ensure the parent class has at least 2 child classes
+
+
+
+savingsaccount1 = SavingsAccount("Benson Mogambi", "KENYA123", 1000)
+currentaccount1 = CurrentAccount("Waka Waka", "UGANDA456", 50000)
+currentaccount2 = CurrentAccount("Onyi Papa", "TZ456", 100)
+
+print("\n--- Savings Account Details ---")
+savingsaccount1.deposit(200)
+savingsaccount1.add_interest()
+savingsaccount1.apply_bank_fees()
+savingsaccount1.display_account_details()
+
+print("\n--- Current Account Details ---")
+currentaccount1.deposit(300)  # Call the deposit method on the instance
+currentaccount1.withdraw(900)
+currentaccount1.apply_bank_fees()
+currentaccount1.display_account_details()
+
+print("\n--- Current Account Details ---")
+currentaccount2.deposit(300)
+currentaccount2.withdraw(900)
+currentaccount2.apply_bank_fees()
+currentaccount2.display_account_details()
 
 
