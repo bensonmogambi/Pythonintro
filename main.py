@@ -186,3 +186,15 @@ class SavingsAccount(BankAccount):
         interest = self.balance * self.interest_rate
         self.balance += interest
         print(f"Interest of {interest} added to savings account.")
+
+
+
+
+
+
+
+
+
+
+
+
